@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90EE4961201A6A61004DA113 /* ka1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90EE4960201A6A61004DA113 /* ka1.ttf */; };
 		90FF25C6201984FF001889CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF25C5201984FF001889CA /* AppDelegate.swift */; };
 		90FF25C8201984FF001889CA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 90FF25C7201984FF001889CA /* GameScene.sks */; };
 		90FF25CA201984FF001889CA /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 90FF25C9201984FF001889CA /* Actions.sks */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90EE4960201A6A61004DA113 /* ka1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ka1.ttf; sourceTree = "<group>"; };
 		90FF25C2201984FF001889CA /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FF25C5201984FF001889CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90FF25C7201984FF001889CA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		90FF25C4201984FF001889CA /* pong */ = {
 			isa = PBXGroup;
 			children = (
+				90EE4960201A6A61004DA113 /* ka1.ttf */,
 				90FF25C5201984FF001889CA /* AppDelegate.swift */,
 				90FF25C7201984FF001889CA /* GameScene.sks */,
 				90FF25C9201984FF001889CA /* Actions.sks */,
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90EE4961201A6A61004DA113 /* ka1.ttf in Resources */,
 				90FF25D1201984FF001889CA /* Main.storyboard in Resources */,
 				90FF25C8201984FF001889CA /* GameScene.sks in Resources */,
 				90FF25D3201984FF001889CA /* Assets.xcassets in Resources */,

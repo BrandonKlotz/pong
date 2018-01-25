@@ -16,11 +16,17 @@ class GameScene: SKScene {
     var main = SKSpriteNode()
     
     var score = [Int]()
+    
+    var enemyScore = SKLabelNode()
+    var mainScore = SKLabelNode()
 
     override func didMove(to view: SKView) {
         
         startGame()
         
+        enemyScore = self.childNode(withName: "enemyScore") as! SKLabelNode
+        mainScore = self.childNode(withName: "mainScore") as! SKLabelNode
+    
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         enemy = self.childNode(withName: "enemy") as! SKSpriteNode
         main = self.childNode(withName: "main") as! SKSpriteNode
@@ -37,6 +43,8 @@ class GameScene: SKScene {
     
     func startGame() {
         score = [0,0]
+        enemyScore.text = "\(score[1])"
+        mainScore.text = "\(score[0])"
     }
     
     func addScore(playerThatScored : SKSpriteNode){
@@ -51,7 +59,8 @@ class GameScene: SKScene {
             score[1] += 1
             ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
         }
-        print(score)
+        enemyScore.text = "\(score[1])"
+        mainScore.text = "\(score[0])"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,7 +82,7 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-        enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.8))
+        enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.1))
         
         if ball.position.y <= main.position.y - 40 {
             addScore(playerThatScored: enemy)
