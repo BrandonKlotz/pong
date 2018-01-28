@@ -38,8 +38,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-mF-Pgq">
-                                <rect key="frame" x="45" y="403" width="285" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-mF-Pgq">
+                                <rect key="frame" x="20" y="432" width="335" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="IMPOSSIBLE">
                                     <color key="titleColor" red="0.91938894989999997" green="0.29707031249999999" blue="0.2953404017857143" alpha="1" colorSpace="deviceRGB"/>
@@ -48,8 +48,8 @@
                                     <action selector="Hard:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="Ulc-pR-NYP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1o-0D-ETY">
-                                <rect key="frame" x="59" y="342" width="257" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1o-0D-ETY">
+                                <rect key="frame" x="20" y="359" width="335" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="Medium">
                                     <color key="titleColor" red="0.91938894989999997" green="0.5" blue="0.2953404017857143" alpha="1" colorSpace="deviceRGB"/>
@@ -58,8 +58,8 @@
                                     <action selector="Medium:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="GVU-Yq-aGI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-C8-6xL">
-                                <rect key="frame" x="68" y="281" width="239" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-C8-6xL">
+                                <rect key="frame" x="20" y="286" width="335" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="Easy">
                                     <color key="titleColor" red="0.91938894989999997" green="0.90836774454285718" blue="0.2953404017857143" alpha="1" colorSpace="deviceRGB"/>
@@ -68,16 +68,15 @@
                                     <action selector="Easy:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="XBw-uu-g5C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-wF-7xi">
-                                <rect key="frame" x="32" y="27" width="311" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-wF-7xi">
+                                <rect key="frame" x="20" y="40" width="335" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="PONG">
                                     <color key="titleColor" red="0.23772776130000001" green="0.23777407410000001" blue="0.23772168160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-mf-1tB">
-                                <rect key="frame" x="32" y="220" width="311" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-mf-1tB">
+                                <rect key="frame" x="20" y="213" width="335" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="2 Player">
                                     <color key="titleColor" red="0.91938894989999997" green="0.91938894989999997" blue="0.91938894989999997" alpha="1" colorSpace="deviceRGB"/>
@@ -89,12 +88,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.13609185809999999" green="0.13609185809999999" blue="0.13609185809999999" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstItem="h3H-mF-Pgq" firstAttribute="top" secondItem="p1o-0D-ETY" secondAttribute="bottom" constant="20" id="47L-vW-c5p"/>
-                            <constraint firstItem="h3H-mF-Pgq" firstAttribute="top" secondItem="p1o-0D-ETY" secondAttribute="bottom" constant="8" id="Axv-Lp-M3Z"/>
-                            <constraint firstItem="p1o-0D-ETY" firstAttribute="top" secondItem="7tV-C8-6xL" secondAttribute="bottom" constant="20" id="Bly-4U-ZId"/>
-                            <constraint firstItem="7tV-C8-6xL" firstAttribute="top" secondItem="4Rj-mf-1tB" secondAttribute="bottom" constant="20" id="Hr7-3k-a73"/>
-                            <constraint firstItem="p1o-0D-ETY" firstAttribute="top" secondItem="7tV-C8-6xL" secondAttribute="bottom" constant="20" id="Je9-SL-Wiy"/>
-                            <constraint firstItem="7tV-C8-6xL" firstAttribute="top" secondItem="4Rj-mf-1tB" secondAttribute="bottom" constant="20" id="wF1-v9-i1G"/>
+                            <constraint firstItem="4Rj-mf-1tB" firstAttribute="top" secondItem="fkA-wF-7xi" secondAttribute="bottom" constant="120" id="1U6-Fv-hqh"/>
+                            <constraint firstItem="7tV-C8-6xL" firstAttribute="top" secondItem="4Rj-mf-1tB" secondAttribute="bottom" constant="20" id="4uH-L1-jAI"/>
+                            <constraint firstItem="p1o-0D-ETY" firstAttribute="leading" secondItem="XrD-QI-yh2" secondAttribute="leading" constant="20" id="C0O-Er-fZi"/>
+                            <constraint firstItem="XrD-QI-yh2" firstAttribute="trailing" secondItem="4Rj-mf-1tB" secondAttribute="trailing" constant="20" id="GGJ-A2-rmo"/>
+                            <constraint firstItem="7tV-C8-6xL" firstAttribute="leading" secondItem="XrD-QI-yh2" secondAttribute="leading" constant="20" id="IVC-Vt-0mK"/>
+                            <constraint firstItem="h3H-mF-Pgq" firstAttribute="leading" secondItem="XrD-QI-yh2" secondAttribute="leading" constant="20" id="J0o-Vs-gJn"/>
+                            <constraint firstItem="XrD-QI-yh2" firstAttribute="trailing" secondItem="7tV-C8-6xL" secondAttribute="trailing" constant="20" id="Nlm-AA-oeM"/>
+                            <constraint firstItem="4Rj-mf-1tB" firstAttribute="leading" secondItem="XrD-QI-yh2" secondAttribute="leading" constant="20" id="Oa5-mE-XwG"/>
+                            <constraint firstItem="fkA-wF-7xi" firstAttribute="leading" secondItem="XrD-QI-yh2" secondAttribute="leading" constant="20" id="fdu-NF-acw"/>
+                            <constraint firstItem="p1o-0D-ETY" firstAttribute="top" secondItem="7tV-C8-6xL" secondAttribute="bottom" constant="20" id="fqi-tX-Uaw"/>
+                            <constraint firstItem="XrD-QI-yh2" firstAttribute="trailing" secondItem="fkA-wF-7xi" secondAttribute="trailing" constant="20" id="kkh-K5-g58"/>
+                            <constraint firstItem="fkA-wF-7xi" firstAttribute="top" secondItem="XrD-QI-yh2" secondAttribute="top" constant="20" id="mDT-Ht-eJR"/>
+                            <constraint firstItem="XrD-QI-yh2" firstAttribute="trailing" secondItem="p1o-0D-ETY" secondAttribute="trailing" constant="20" id="r0b-zr-J0p"/>
+                            <constraint firstItem="XrD-QI-yh2" firstAttribute="trailing" secondItem="h3H-mF-Pgq" secondAttribute="trailing" constant="20" id="rQK-bO-R7s"/>
+                            <constraint firstItem="h3H-mF-Pgq" firstAttribute="top" secondItem="p1o-0D-ETY" secondAttribute="bottom" constant="20" id="vlu-cw-LaX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XrD-QI-yh2"/>
                     </view>

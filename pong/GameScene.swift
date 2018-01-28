@@ -108,7 +108,7 @@ class GameScene: SKScene {
             enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
             break
         case .hard:
-            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.3))
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.2))
             break
         case .twoPlayer:
             
