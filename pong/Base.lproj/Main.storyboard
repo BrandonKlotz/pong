@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8ag-e9-Ptf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQf-zw-rW3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,6 +15,22 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Xwg-Ph-vNT">
+            <objects>
+                <navigationController id="LQf-zw-rW3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qey-xu-tsg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8ag-e9-Ptf" kind="relationship" relationship="rootViewController" id="odm-Tr-9c5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ9-68-cJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1510" y="34"/>
+        </scene>
         <!--MenuVC-->
         <scene sceneID="iEQ-nG-Fcx">
             <objects>
@@ -23,42 +39,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-mF-Pgq">
-                                <rect key="frame" x="45" y="322" width="285" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-mF-Pgq">
+                                <rect key="frame" x="45" y="403" width="285" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
-                                <state key="normal" title="DEATH">
+                                <state key="normal" title="IMPOSSIBLE">
                                     <color key="titleColor" red="0.91938894989999997" green="0.29707031249999999" blue="0.2953404017857143" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Hard:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="Ulc-pR-NYP"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1o-0D-ETY">
-                                <rect key="frame" x="59" y="261" width="257" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1o-0D-ETY">
+                                <rect key="frame" x="59" y="342" width="257" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="Medium">
                                     <color key="titleColor" red="0.91938894989999997" green="0.5" blue="0.2953404017857143" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Medium:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="GVU-Yq-aGI"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-C8-6xL">
-                                <rect key="frame" x="68" y="200" width="239" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-C8-6xL">
+                                <rect key="frame" x="68" y="281" width="239" height="53"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="Easy">
                                     <color key="titleColor" red="0.91938894989999997" green="0.90836774454285718" blue="0.2953404017857143" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Easy:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="XBw-uu-g5C"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-mf-1tB">
-                                <rect key="frame" x="32" y="137" width="311" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-wF-7xi">
+                                <rect key="frame" x="32" y="27" width="311" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
+                                <state key="normal" title="PONG">
+                                    <color key="titleColor" red="0.23772776130000001" green="0.23777407410000001" blue="0.23772168160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rj-mf-1tB">
+                                <rect key="frame" x="32" y="220" width="311" height="44"/>
                                 <fontDescription key="fontDescription" name="KarmaticArcade" family="Karmatic Arcade" pointSize="36"/>
                                 <state key="normal" title="2 Player">
                                     <color key="titleColor" red="0.91938894989999997" green="0.91938894989999997" blue="0.91938894989999997" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="twoPlayer:" destination="8ag-e9-Ptf" eventType="touchUpInside" id="IUF-dM-3lr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13609185809999999" green="0.13609185809999999" blue="0.13609185809999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="h3H-mF-Pgq" firstAttribute="top" secondItem="p1o-0D-ETY" secondAttribute="bottom" constant="20" id="47L-vW-c5p"/>
+                            <constraint firstItem="h3H-mF-Pgq" firstAttribute="top" secondItem="p1o-0D-ETY" secondAttribute="bottom" constant="8" id="Axv-Lp-M3Z"/>
+                            <constraint firstItem="p1o-0D-ETY" firstAttribute="top" secondItem="7tV-C8-6xL" secondAttribute="bottom" constant="20" id="Bly-4U-ZId"/>
+                            <constraint firstItem="7tV-C8-6xL" firstAttribute="top" secondItem="4Rj-mf-1tB" secondAttribute="bottom" constant="20" id="Hr7-3k-a73"/>
+                            <constraint firstItem="p1o-0D-ETY" firstAttribute="top" secondItem="7tV-C8-6xL" secondAttribute="bottom" constant="20" id="Je9-SL-Wiy"/>
+                            <constraint firstItem="7tV-C8-6xL" firstAttribute="top" secondItem="4Rj-mf-1tB" secondAttribute="bottom" constant="20" id="wF1-v9-i1G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XrD-QI-yh2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PqI-w0-gZA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFV-Jb-pjN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +108,7 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="pong" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameVC" id="BV1-FR-VrT" customClass="GameViewController" customModule="pong" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,6 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="7" y="34"/>
         </scene>
     </scenes>
 </document>

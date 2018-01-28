@@ -33,7 +33,6 @@ class GameScene: SKScene {
         
         main = self.childNode(withName: "main") as! SKSpriteNode
         main.position.y = (-self.frame.height / 2) + 50
-        ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
 
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         
@@ -47,6 +46,7 @@ class GameScene: SKScene {
         score = [0,0]
         enemyScore.text = "\(score[1])"
         mainScore.text = "\(score[0])"
+        ball.physicsBody?.applyImpulse(CGVector(dx: 10, dy: 10))
     }
     
     func addScore(playerThatScored : SKSpriteNode){
@@ -78,12 +78,36 @@ class GameScene: SKScene {
         for touch in touches {
             let location = touch.location(in: self)
             
+            if currentGameType == .twoPlayer {
+                if location.y > 0 {
+                    enemy.run(SKAction.moveTo(x: location.x, duration: 0.2))
+                }
+                if location.y < 0 {
+                    main.run(SKAction.moveTo(x: location.x, duration: 0.2))
+                }
+            }
             main.run(SKAction.moveTo(x: location.x, duration: 0.2))
         }
     }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        switch currentGameType {
+        case .twoPlayer:
+            
+            break
+        case .easy:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.2))
+            break
+        case .medium:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 1.0))
+            break
+        case .hard:
+            enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.7))
+            break
+        }
+        
+        
         enemy.run(SKAction.moveTo(x: ball.position.x, duration: 0.4))
         
         if ball.position.y <= main.position.y - 32 {
