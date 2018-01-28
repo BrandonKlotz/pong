@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-var currentGameType = gameType()
+var currentGameType = gameType.medium
 
 class GameViewController: UIViewController {
 

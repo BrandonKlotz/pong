@@ -32,7 +32,7 @@ class MenuVC: UIViewController {
     }
     
     func beginGame(game : gameType) {
-        let gameVC = self.storyboard?.instantiateInitialViewController(withIdentifier: "gameVC") as! GameViewController
+        let gameVC = self.storyboard?.instantiateViewController(withIdentifier: "gameVC") as! GameViewController
         
         currentGameType = game
         
